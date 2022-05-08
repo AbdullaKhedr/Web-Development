@@ -4,6 +4,8 @@ This repository contains a basic School Management System (SMS) Web App for mana
 
 The aim of the project is to apply the principles of the web development:
 
-Using vanilla HTML, CSS, JavaScript
+Using vanilla HTML, CSS, JavaScript.
 
-Using Node.js fro backed (server)
+Using Node.js fro backed (server).
+
+Using Mongodb NoSQL database.
