@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome | School</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    <link rel="stylesheet" href="css/common-styles.css">
+    <link rel="stylesheet" href="css/user-home.css">
+    <link rel="stylesheet" href="css/forms.css">
+    <!-- To get the header and footer styles -->
+    <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+
+<!-- Header -->
+<header>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container flex">
+            <div class="flex">
+                <img class="logo-img" src="img/logo.png" alt="School Logo">
+                <h1 class="logo">The School</h1>
+            </div>
+            <nav>
+                <ul class="nav-options-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="admission.html">Admission Application</a></li>
+                    <li><a class="editUserAccount" href="#" onclick="editUserAccount()">Edit My Account</a></li>
+                    <li><a class="logOut" href="#" onclick="logOut()">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </nav>
+</header>
+
+<!-- Main -->
+<main>
+    <div class="main-container container">
+
+        <!-- User Admissions list Table -->
+        <section class="user-admissions">
+            <h2 class="table-name text-center">Applications List</h2>
+            <div>
+                <table class="admissions-table">
+                    <thead id="admissions-table-head">
+                    <tr>
+                        <th>Application for</th>
+                        <th>Creation Date</th>
+                        <th>Academic Year</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                    </thead>
+                    <tbody id="admissions-table-body"></tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Summary Report for admissions applications -->
+        <section class="model report-model" id="report-model">
+            <div class="model-content" style="margin: 70px auto; padding: 20px;">
+                <span class="admission-model-close-btn close">&times;</span>
+                <h2>General Summary Report:</h2>
+                <div class="filed" style="margin: 0">
+                    <label for="academicYear">Choose an academic Year</label><br>
+                    <select name="academicYear" id="academicYear" onchange="reportByYear(this.value)" required>
+                    </select>
+                </div>
+                <div class="report-model-content"></div>
+            </div>
+        </section>
+
+    </div>
+
+</main>
+
+<script type="module" src="js/user-home.js"></script>
+</body>
+</html>
